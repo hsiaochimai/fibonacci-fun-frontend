@@ -14,11 +14,9 @@ export default class FibGenerator extends Component {
   };
   onSubmit=(e, inputNum)=>{
 e.preventDefault()
-console.log(`hello`, inputNum)
       fetch(`http://localhost:3000/api/fibonacci/${inputNum}`)
       .then(res=>res.json())
       .then(resJson=> {
-          console.log(`hello resJson`,resJson)
         this.setState({results:resJson})
         })
   }
@@ -26,7 +24,6 @@ console.log(`hello`, inputNum)
 
   render() {
      const fibResults= [...this.state.results]
-     console.log(fibResults)
      const results= fibResults.map((r, index)=>{
          return <FibNumber key={index}num={r}/>
      })
