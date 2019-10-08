@@ -1,22 +1,61 @@
-.App {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+ header{
+  padding: 5%;
+   background-color:#7C238C;
+   text-align: center;
+   color:white;
+   
+ } 
+ header h2{
+  font-size:3em
+ }
+
+ header p{
+  font-size:2.5em
+ }
+ .container{
+   height:100vh;
+   background-color: #09d3ac;
+ }
+ .ui-input{
+  padding: 5%;
+   justify-content: center;
+   display:flex;
+   flex-direction: row;
+ }
+
+ .ui-input input{
+   font-size: 24px;
+   border-radius: 0.8;
+   width:400px;
+ }
+ .ui-input button{
+  font-size: 18px;
+ }
+
+.results{
+  display:flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+}
+.fib-number{
+  background-color: #7C238C;
+  width:4em;
+  padding:10px;
+  margin: 30px;
+  box-shadow: 3px 3px #888888;
+}
+.fib-number p{
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+  font-size: 2em;
+  color:white;
 }
